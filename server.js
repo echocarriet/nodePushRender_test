@@ -117,4 +117,4 @@ const requestListener = (req, res) => {
 
 }
 const server = http.createServer(requestListener);
-server.listen(3005); // 瀏覽器使用 127.0.0.1:3005開啟
+server.listen(process.env.PORT || 3005); // 瀏覽器使用 127.0.0.1:3005開啟
